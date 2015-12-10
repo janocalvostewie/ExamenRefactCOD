@@ -35,18 +35,18 @@ public class ExamenRefactCOD {
                     } else {
                         int contador1 = 0;
                         int i1 = 1;
-                        int k = (i - 1) / 2;
-                        if (k % 2 == 0) {
-                            k--;
+                        int buscador = (i - 1) / 2;
+                        if (buscador % 2 == 0) {
+                            buscador--;
                         }
 
-                        while (i1 <= k) {
+                        while (i1 <= buscador) {
                             if (i % i1 == 0) {
                                 contador1++;
                             }
                             i1 += 2;
                             if (contador1 == 2) {
-                                i1 = k + 1;
+                                i1 = buscador + 1;
                             }
                         }
 
